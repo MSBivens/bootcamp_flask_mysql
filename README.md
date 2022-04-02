@@ -6,3 +6,6 @@ The previous stack was Flask, the repo for those assignments can be found here: 
 I am currently working through this course.
 
 # Assignments for the Flask + MySQL Course 
+Users CR, Objectives;
+    Practice connecting Flask to database
+    Practice display and creating data from/into the database
