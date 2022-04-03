@@ -9,3 +9,7 @@ I am currently working through this course.
 Users CR, Objectives;
     Practice connecting Flask to database
     Practice display and creating data from/into the database
+
+Users CRUD, Objectives;
+    Practice connecting Flask to database
+    Practicee full CRUD action with database
