@@ -13,3 +13,6 @@ Users CR, Objectives;
 Users CRUD, Objectives;
     Practice connecting Flask to database
     Practicee full CRUD action with database
+
+Users CRUD Modularized, Objectives;
+    Modularize the Users CRUD assignment
