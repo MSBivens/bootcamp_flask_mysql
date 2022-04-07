@@ -21,3 +21,8 @@ Dojos andd Ninjas, Objectives;
     Practice connecting Flask to database
     Practice one-to-many relationships
     Practice display and creating data from/into the database 
+
+Books, Objectives
+    Practice connecting Flask to database
+    Practice many-to-many relationships
+    Practice display and creating data from/into the database

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex justify-content-around flex-wrap">
+        <div class="col-6">
+            <h2 class="text-center">{{author.name}}'s Favorite Books</h2>
+            <table class="table table-warning">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th># of Pages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in author.favorite_books %}
+                        <tr>
+                            <td>{{ book.title }}</td>
+                            <td>{{ book.num_of_pages }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <form action="/join/book" method="post" class="col-6">
+            <h2 class="text-info">Add Author's Favorite</h2>
+            <input type="hidden" name="author_id" value="{{author.id}}">
+            <div class="form-group">
+                <label for="book_id">Book:</label>
+                <select name="book_id" class="form-control" >
+                    {% for book in unfavorited_books %}
+                        <option value="{{book.id}}">{{book.title}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

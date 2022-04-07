@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex flex-wrap justify-content-around">
+        <form action="/create/book" method="post" class="col-6 p-3 bg-dark text-light">
+            <h2 class="text-center text-warning">New Book</h2>
+            <div class="form-group">
+                <label for="tite">Title:</label>
+                <input type="text" name="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="num_of_pages"># of Pages:</label>
+                <input type="number" name="num_of_pages" class="form-control">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-warning">
+        </form>
+        <div class="card col-6">
+            <div class="card-body">
+                <h2 class="card-title">All Books</h2>
+                {% for one_book in all_books %}
+                    <p class="card-text"><a href="/book/{{one_book.id}}">{{one_book.title}}</a></p>
+                {% endfor %}
+            </div>
+            <div class="card-footer">
+                <a href="/">Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
