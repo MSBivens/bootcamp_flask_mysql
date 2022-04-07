@@ -22,7 +22,12 @@ Dojos andd Ninjas, Objectives;
     Practice one-to-many relationships
     Practice display and creating data from/into the database 
 
-Books, Objectives
+Books, Objectives;
     Practice connecting Flask to database
     Practice many-to-many relationships
     Practice display and creating data from/into the database
+
+Dojo Survey with Validation, Objectives;
+    Practice working with a databse
+    Practice validating user input
+    Practice using flash messages
