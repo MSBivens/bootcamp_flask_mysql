@@ -39,3 +39,11 @@ Email Validation with DB, Objectives:
     Practice using flash messages
     Practice redirecting after going to a POST route
     Consider front-end vs back-end validations
+
+Login and Registration, Objectives:
+    Build an application that requires login and registration
+    Practice connecting a Flask application to a MySQL database
+    Become familiar with the logic that is required to validate a user's registration to a website
+    Become familiar with the logic that is required to validate a user logging into a webite
+    Process a user logging out of an application
+    Practice using session
