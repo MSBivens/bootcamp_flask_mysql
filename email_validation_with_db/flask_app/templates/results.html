@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emails</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="col-6 bg-info rounded mx-auto p-5 text-dark">
+        <div class="bg-success text-dark">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <h2>Flash</h2>
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <h2>Here are the emails:</h2>
+        {% for email in emails %}
+            <p>{{email.email}}  {{email.created_at}} <a href="/destroy/{{email.id}}">Delete</a></p>
+        {% endfor %}
+    </div>
+</body>
+</html>

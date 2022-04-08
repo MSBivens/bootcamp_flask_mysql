@@ -31,3 +31,11 @@ Dojo Survey with Validation, Objectives;
     Practice working with a databse
     Practice validating user input
     Practice using flash messages
+
+Email Validation with DB, Objectives:
+    Practice reading from and inserting into a datbase
+    Validate the user input before adding it to the database
+    Practice using regex
+    Practice using flash messages
+    Practice redirecting after going to a POST route
+    Consider front-end vs back-end validations
