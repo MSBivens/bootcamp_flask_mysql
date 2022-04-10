@@ -6,28 +6,28 @@ The previous stack was Flask, the repo for those assignments can be found here: 
 I am currently working through this course.
 
 # Assignments for the Flask + MySQL Course 
-Users CR, Objectives;
+Users CR, Objectives:
     Practice connecting Flask to database
     Practice display and creating data from/into the database
 
-Users CRUD, Objectives;
+Users CRUD, Objectives:
     Practice connecting Flask to database
     Practicee full CRUD action with database
 
-Users CRUD Modularized, Objectives;
+Users CRUD Modularized, Objectives:
     Modularize the Users CRUD assignment
 
-Dojos andd Ninjas, Objectives;
+Dojos andd Ninjas, Objectives:
     Practice connecting Flask to database
     Practice one-to-many relationships
     Practice display and creating data from/into the database 
 
-Books, Objectives;
+Books, Objectives:
     Practice connecting Flask to database
     Practice many-to-many relationships
     Practice display and creating data from/into the database
 
-Dojo Survey with Validation, Objectives;
+Dojo Survey with Validation, Objectives:
     Practice working with a databse
     Practice validating user input
     Practice using flash messages
@@ -47,3 +47,9 @@ Login and Registration, Objectives:
     Become familiar with the logic that is required to validate a user logging into a webite
     Process a user logging out of an application
     Practice using session
+
+Private Wall, Objectives:
+    Practice connecting a Flask application to a MySQL database
+    Include login and registration
+    Self Join relationships
+    Continue to think about web security and how others could potentially hack your site
