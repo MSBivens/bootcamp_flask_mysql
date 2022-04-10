@@ -3,7 +3,7 @@ This is a collection of code for the Coding Dojo Bootcamp, Flask + MySQL course 
 
 The previous stack was Flask, the repo for those assignments can be found here: https://github.com/MSBivens/bootcamp_flask 
 
-I am currently working through this course.
+I have completed the Flask + MySQL course and moved on to the AJAX course, the repo for those assignments can be found here: https://github.com/MSBivens/bootcamp_ajax
 
 # Assignments for the Flask + MySQL Course 
 Users CR, Objectives:
