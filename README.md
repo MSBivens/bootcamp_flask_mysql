@@ -53,3 +53,6 @@ Private Wall, Objectives:
     Include login and registration
     Self Join relationships
     Continue to think about web security and how others could potentially hack your site
+
+Recipes, Objectives:
+    Practice all previously built skills in preperation for the belt exam
